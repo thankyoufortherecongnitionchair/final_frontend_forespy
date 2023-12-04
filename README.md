@@ -1,4 +1,4 @@
-# Espybrandnew
+# Espy Front End
 
 COLLECTS emails from users and places them into a serverless Firebase backend. The emails are all sanitized and validated, and placed safely in the database in Firebase. Every day, an email is sent out using Chron Job to these users that contains Scraped reviews from throughout the web. Also, an LLM (google's PaLM API) is used to send viewers daily emails that contain albums according to their mood.
 Run " npm i " to install all dependencies before executing the project.
