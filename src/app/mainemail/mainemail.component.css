@@ -1,0 +1,113 @@
+html,
+body {
+    background-color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+    perspective: 3px;
+    /* margin-top: 0px !important;
+    padding-top: 0px !important; */
+}
+
+section {
+    background-size: cover;
+    color: white;
+    background-color: var(--bg, --color-black);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.image {
+        background-position: center center;
+        transform: translateZ(-1px) scale(1.5);
+        /* Force the background image to fill the whole element. */
+        background-size: cover;
+        /* Keep the image from overlapping sibling elements. */
+        z-index: -1;
+        height: 100vh;
+    }
+
+    &.text {
+        height: 50vh;
+        margin-top: 0px;
+    }
+
+
+    &.heading {
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px) scale(1.5);
+    }
+
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid grey;
+    width: 80%
+}
+
+body {
+    margin-top: 30vh;
+}
+
+*/ .my-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+    outline: none;
+}
+
+
+input:focus {
+    transform: scale(1.05);
+
+
+}
+
+button {
+    border-radius: 6px;
+    background-color: #0192ef;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0172bf;
+}
+
+.warning {
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}

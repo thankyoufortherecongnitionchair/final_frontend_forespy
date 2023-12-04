@@ -1,0 +1,104 @@
+<div class="container">
+  <section
+    class="image"
+    style="
+      background-image: url(https://images.unsplash.com/photo-1504357121897-47698286288d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29c6dcd6a6f6c6a76c101e4336ae7c2d&auto=format&fit=crop&w=2851&q=80);
+    "
+  ></section>
+  <section class="heading">
+    <h1>Welcome To Espy!</h1>
+  </section>
+  <section class="text" style="--bg: #c8c8bc">
+    <h1>Get all your favourites reviews automatically!</h1>
+  </section>
+  <section
+    class="image"
+    style="
+      background-image: url(https://images.unsplash.com/photo-1538964173425-93884d739596?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e2f0390d79969aaf31e155bd1f7138b0&auto=format&fit=crop&w=1275&q=80);
+    "
+  ></section>
+  <section class="heading">
+    <h1><s>At the click of a button</s></h1>
+    <p></p>
+  </section>
+  <section class="text" style="--bg: #638a87">
+    <h1>Automatically, every morning</h1>
+  </section>
+  <section
+    class="image"
+    style="
+      background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-0.3.5&s=2950e56dc2bba8a65b82f130aa4e47ea&auto=format&fit=crop&w=900&q=60);
+    "
+  ></section>
+  <section class="heading">
+    <h3>Espy Uses:</h3>
+  </section>
+  <section class="text" style="--bg: #384558">
+    <h3>
+      An intricate scraping system that collects the latest reviews from across
+      the web and delivers their links to your inbox every morning, so that you
+      dont have to go through the trouble of looking for reviews manually. In
+      addiion to this, it uses generative AI to suggest you albums based on your
+      mood!
+    </h3>
+  </section>
+  <section
+    class="image"
+    style="
+      background-image: url(https://images.unsplash.com/photo-1538982198821-0714ff3d74ba?ixlib=rb-0.3.5&s=0550cf3351896481de327a10971739f1&auto=format&fit=crop&w=1251&q=80);
+    "
+  ></section>
+  <section class="heading">
+    <h1>Get Started Today!</h1>
+  </section>
+  <section class="text" style="--bg: #9dbdc4">
+    <form #createData="ngForm" class="my-form" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          ngModel
+          #name="ngModel"
+          class="form-control"
+          placeholder="Enter your name here!"
+          required
+        />
+
+        <div *ngIf="name.invalid && (name.dirty || name.touched)">
+          <span *ngIf="name.errors?.['required']" class="warning"
+            >Name is required.</span
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          ngModel
+          #email="ngModel"
+          class="form-control"
+          placeholder="Enter your email here!"
+          required
+        />
+
+        <div *ngIf="email.invalid && (email.dirty || email.touched)">
+          <span *ngIf="email.errors?.['required']" class="warning"
+            >Email is required.</span
+          >
+          <span *ngIf="email.errors?.['email']" class="warning"
+            >Enter a valid email address.</span
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary" [disabled]="createData.invalid">
+          Submit
+        </button>
+      </div>
+    </form>
+  </section>
+</div>

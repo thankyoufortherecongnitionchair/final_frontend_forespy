@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "espy-123": {
+      "hosting": {
+        "espybrandnew": [
+          "espy-123"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "espy-123"
+  }
+}

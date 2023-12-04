@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* You can add global styles to this file, and also import other style files */
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    /*background-image: url('https://picsum.photos/1920/1080') !important;*/
+    /*background-size:cover;*/
+    /* background-repeat: no-repeat; */
+}
